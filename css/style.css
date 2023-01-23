@@ -1,0 +1,974 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/**/
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,*::before, *::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+body {
+    color: #525252;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.wrapper {
+    margin: 0 auto; 
+    max-width: 1122px;      
+}
+
+.wrapperIn {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.wrapperFull {
+    max-width: 1322px;
+    margin: 0 auto;      
+}
+
+.wrapperFullIn {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*header style start*/
+
+.header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;         
+    -webkit-transition: .2s lineur;         
+    -o-transition: .2s lineur;         
+    transition: .2s lineur; 
+    padding-bottom: 5px;
+    background-color: #0281cf;
+    z-index: 999; 
+}
+
+.headerLogoLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+    padding-bottom: 3px;    
+}
+
+.headerLogoLink:hover, .headerLogoLink:focus, .headerLogoLink:active {
+    opacity: .75;  
+}
+
+.headerWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; 
+    -webkit-box-align: end; 
+        -ms-flex-align: end; 
+            align-items: flex-end; 
+    -webkit-box-pack: justify; 
+        -ms-flex-pack: justify; 
+            justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.headerNav {
+    padding-bottom: 14px;
+}
+
+.headerList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style: none;    
+}
+
+.headerItem {    
+    margin-right: 110px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.35px;   
+}
+
+.headerItem:last-child {
+   margin-right: 2px;
+}
+
+.headerLink {
+    color: white;
+    text-decoration: none;
+}
+
+.headerLink:hover, .headerLink:focus, .headerLink:active {
+    opacity: .70;
+}
+
+.headerBurger {
+    display: none;
+    width: 30px;
+    height: 24px;
+    position: relative;        
+    margin-right: 7px;
+    margin-bottom: 12px;
+}
+
+.burgerLine {
+    display: block; 
+    width: 100%; 
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+}
+
+.burgerLineFirst {
+    top: 0;
+}
+
+.burgerLineSecond {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.burgerLineThird {
+    bottom: 0;
+}
+
+/*header style end*/
+
+/*intro style start*/
+
+.intro {  
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: flex;
+    margin: 0 auto; 
+    width: 100%; 
+    height: 400px;
+    background: url(/project_1/img/bgIntroBig5-min.png);
+    padding-top: 55px;
+    padding-bottom: 10px;    
+}
+
+.introCover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;  
+    -ms-flex-line-pack: center;  
+        align-content: center;  
+    padding-top: 10px; 
+    padding-bottom: 20px;  
+    border-bottom: 1px solid #FA7718; 
+}
+
+.introText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;   
+    -ms-flex-wrap: wrap;   
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;    
+}
+
+.introTextDesc {       
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0.35px; 
+    padding-bottom: 10px;      
+}
+
+.introTextTitle { 
+    color: #0281cf;        
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 54px;
+    letter-spacing: 0.35px;    
+    padding-bottom: 20px;        
+}
+
+/*intro style end*/
+
+/*section style start*/
+
+.section {
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.sectionCards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr;
+    grid-template-columns: repeat(6, 1fr);    
+    -webkit-column-gap: 30px;    
+       -moz-column-gap: 30px;    
+            column-gap: 30px; 
+}
+
+.sectionCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;    
+    -webkit-box-orient: vertical;    
+    -webkit-box-direction: normal;    
+        -ms-flex-direction: column;    
+            flex-direction: column;
+    -ms-grid-column-span: 2;
+    grid-column: span 2;    
+}
+
+.sectionCardPic {
+    position: relative;
+    margin-bottom: 20px;    
+}
+
+.sectionPicImg {
+    border-radius: 16px;
+}
+
+.sectionCardTitleSpace {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.sectionCardTitle {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0.35px; 
+    text-align: center;   
+}
+
+.sectionCardDesc {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.35px; 
+    text-align: center;  
+}
+
+.sectionCTS {
+    padding-bottom: 10px;
+}
+
+/*section style end*/
+
+
+/*benefits style start*/
+
+.benefits {
+    background-color: #FAFCFF;    
+    padding-bottom: 30px;      
+}
+
+.benefitsWrap {
+    max-width: 1122px;    
+    margin: 0 auto; /*выравнивание по центру*/     
+    border-top: 1px solid #FA7718;       
+}
+
+.benefitsWrapIn {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.benefitsT {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.h3Title {     
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0.35px; 
+    text-decoration: none;    
+}
+
+.benefitsCards {
+    display: -ms-grid;
+    display: grid;    
+    -ms-grid-columns: 1fr 35px 1fr 35px 1fr;    
+    grid-template-columns: repeat(3, 1fr);    
+    -webkit-column-gap: 35px;    
+       -moz-column-gap: 35px;    
+            column-gap: 35px;    
+}
+
+.benefitsCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;    
+}
+
+.benefitsCardPicSpace {
+    padding-bottom: 15px;
+}
+
+.benefitsCardTitleSpace {    
+    padding-bottom: 20px;
+}
+
+.benefitsCardTitle {
+   text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0.35px; 
+}
+
+.benefitsCardPic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+}
+
+.benefitsCardDesc {    
+    text-align: start;
+    padding-left: 15px;
+    padding-bottom: 60px;
+}
+
+.p {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.35px;  
+}
+
+/*benefits style end*/
+
+
+/*yandexMap style start*/
+
+.yandexMap {
+    padding-top: 40px;
+}
+
+.yandexMapTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 10px;
+}
+
+.yandexMapText {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0.35px; 
+    text-decoration: none;    
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 40px;
+}
+
+
+/*yandexMap style end*/
+
+/*schedule style start*/
+
+.schedule {
+    background-color: #FAFCFF;
+    margin-left: 5px;  
+    margin-right: 5px;  
+}
+
+.scheduleBlocksText {
+    padding-bottom: 50px;
+}
+
+.weekDay {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr;
+    grid-template-columns: repeat(7, 1fr);    
+    -webkit-column-gap: 0;    
+       -moz-column-gap: 0;    
+            column-gap: 0;   
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #FA7718;    
+}
+
+.pp {    
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #7b7b7a;
+}
+
+.po {    
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0.35px;  
+}
+
+.p6 {    
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.35px; 
+}
+
+.p4 {    
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+}
+
+.pB {    
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+}
+
+.scheduleBlocksDesc {
+    text-align: center;
+    padding-top: 10px; 
+    padding-left: 2px;  
+    padding-right: 2px;
+}
+
+/*schedule style end*/
+
+/*schedule style start*/
+
+.yandexMapTitle {
+    padding-bottom: 20px;
+}
+
+.yandexMapText {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0.35px; 
+}
+
+/*schedule style end*/
+
+/*footer style start*/
+
+.footer{
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #0281cf;
+}
+
+.contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 20px;         
+}
+
+.tel {
+    color: white;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+}
+
+.inf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;     
+    padding-bottom: 10px; 
+}
+
+.infText {
+    color: rgb(67, 67, 67);
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+}
+
+.social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
+    padding-bottom: 10px;   
+}
+
+.vk {
+    color: white;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+    text-decoration: none;
+}
+
+.vk:hover, .vk:focus, .vk:active {
+    opacity: .65;
+}
+
+/*footer style end*/
+
+
+/*media start*/
+
+@media screen and (max-width: 1025px) {
+    .sectionCards {
+        -webkit-column-gap: 15px;
+           -moz-column-gap: 15px;
+                column-gap: 15px;
+    }        
+    .tel {        
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500;        
+    }
+    .vk {        
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 500;        
+    }
+    .inf {
+        padding-bottom: 5px;
+    }
+    .introTextTitle {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 600;   
+        padding-top: 7px;
+    }    
+}
+
+@media screen and (max-width: 800px) {
+    
+    .headerBurger {
+        display: block;
+    }    
+    .headerNav{
+        width: 100%;
+        height: 30%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #0281cf;
+        z-index: 10;
+        padding-top: 40px;
+        padding-left: 30px;
+        -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+                transform: translateX(100%);
+        -webkit-transition: .2s all linear;
+        -o-transition: .2s all linear;
+        transition: .2s all linear; /*all linear- это линейная функция*/
+    }
+    .headerNav_active{
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
+        -webkit-transition: .2s all linear;
+        -o-transition: .2s all linear;
+        transition: .2s all linear;
+    }
+    .headerItem{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .headerItem:last-child{
+        margin-bottom: 0;
+    }
+    .headerLink{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .headerNavClose{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 11;
+    }
+    .headerNavCloseLine{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 50%;            
+    }
+    .headerNavCloseLine:first-child{
+        -webkit-transform: translateY(-50%) rotate(45deg);
+            -ms-transform: translateY(-50%) rotate(45deg);
+                transform: translateY(-50%) rotate(45deg); /*по центру с поворотом 45 градусов*/         
+    }
+    .headerNavCloseLine:last-child{
+        -webkit-transform: translateY(-50%) rotate(-45deg);
+            -ms-transform: translateY(-50%) rotate(-45deg);
+                transform: translateY(-50%) rotate(-45deg); /*по центру с поворотом 45 градусов*/         
+    }
+
+    .headerLogoLink {
+        padding-left: 5px;
+    }
+    .intro {
+        height: 320px;
+    }
+    .introTextTitle { 
+        color: #0281cf;        
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+        letter-spacing: 0.35px;    
+        padding-bottom: 15px;    
+    }
+    .introCover {
+        padding-bottom: 10px;
+    }
+    .introTextDesc {
+        padding-bottom: 5px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .section {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }    
+    .sectionCardTitle {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .sectionCardDesc {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .sectionCardPic {
+        margin-bottom: 10px;
+    }
+    .benefits {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 0px;        
+    }
+    .benefitsT {
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+    .h3Title {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .benefitsCardTitle {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .p {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .benefitsCardTitleSpace {
+        padding-bottom: 10px;
+    }    
+    .scheduleBlocksText {
+        padding-bottom: 30px;
+    }
+    .po {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .p6 {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+    } 
+    .p4 {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .pB {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .container {
+        padding-bottom: 20px;
+    }
+    .yandexMapText {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .yandexMap {
+        padding-top: 30px;
+    }
+    .tel {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+    .vk {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+    .infText {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .contacts {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .intro {
+        height: 230px;
+    }
+    .introTextTitle {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+    .introTextDesc {
+        font-size: 10px;
+        line-height: 14px;
+        font-weight: 600;
+    }
+    .section {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .sectionCards {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .sectionCard {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #FA7718;
+    }
+    .sectionCard:first-child {
+        padding-top: 0;
+    }    
+    .card:first-child {
+        padding-top: 5px;
+        border-bottom: 1 px solid #FA7718; /**/
+    }
+    .benefitsWrap {
+        border-top: none;
+    }
+    .benefitsCards {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .benefitsCardDesc {
+        padding-left: 0;
+        text-align: center;
+    }
+    .scheduleBlocks {
+        padding-top: 10px;
+        border-top: 1px solid #FA7718;
+    }
+    .yandexMapText {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 500;
+    }
+    .tel {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+    }
+    .vk {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500; 
+    }
+    .infText {
+        font-size: 8px;
+        line-height: 12px;
+        font-weight: 400; 
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .introTextTitle {
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 600;
+    }
+    .introTextDesc {
+        padding-bottom: 5px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+    
+    
+
+/*media end*/
