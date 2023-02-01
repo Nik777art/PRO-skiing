@@ -160,7 +160,7 @@ img {
     margin: 0 auto; 
     width: 100%; 
     height: 290px;
-    background: url(/project_1/img/bgIntroBig5-min.png);
+    background: url(../img/bg-min.png);
     padding-top: 55px;
     padding-bottom: 10px;    
 }
